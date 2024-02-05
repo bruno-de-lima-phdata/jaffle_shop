@@ -1,4 +1,4 @@
-{% set payment_methods = ['cashs', 'credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
+{% set payment_methods = ['cashs', 'credit_card', 'bank_transfer', 'gift_card'] %}
 
 with orders as (
 
