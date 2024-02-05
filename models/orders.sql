@@ -1,4 +1,4 @@
-{% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
+{% set payment_methods = ['cash', 'credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
 
 with orders as (
 
@@ -25,7 +25,7 @@ order_payments as (
 
     from payments
 
-    group by order_id
+    group by order_id, day
 
 ),
 
